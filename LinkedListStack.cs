@@ -2,7 +2,7 @@
 
 namespace Algorithms
 {
-    public class StackLL
+    public class LinkedListStack
     {
         private Node head = null;
         private int count = 0;
