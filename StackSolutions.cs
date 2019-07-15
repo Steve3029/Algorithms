@@ -45,19 +45,19 @@ namespace Algorithms
             }
         }
 
-        public static void Main(string[] args)
-        {
-            var stack = new LinkedListStack();
-            stack.Push(5);
-            stack.Push(2);
-            stack.Push(7);
-            stack.Push(1);
-            stack.Push(9);
-            SortStack(stack);
-            stack.Print();
-            Console.WriteLine();
-            ReversStack(stack);
-            stack.Print();
-        }
+        //public static void Main(string[] args)
+        //{
+        //    var stack = new LinkedListStack();
+        //    stack.Push(5);
+        //    stack.Push(2);
+        //    stack.Push(7);
+        //    stack.Push(1);
+        //    stack.Push(9);
+        //    SortStack(stack);
+        //    stack.Print();
+        //    Console.WriteLine();
+        //    ReversStack(stack);
+        //    stack.Print();
+        //}
     }
 }
