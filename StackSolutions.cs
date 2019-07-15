@@ -31,6 +31,20 @@ namespace Algorithms
             }
         }
 
+        public static void ReversStack(LinkedListStack stack)
+        {
+            if(stack.Size() == 0)
+            {
+                return;
+            }
+            else
+            {
+                var temp = stack.Pop();
+                ReversStack(stack);
+                stack.InsertAtBottom(temp);
+            }
+        }
+
         public static void Main(string[] args)
         {
             var stack = new LinkedListStack();
@@ -40,6 +54,9 @@ namespace Algorithms
             stack.Push(1);
             stack.Push(9);
             SortStack(stack);
+            stack.Print();
+            Console.WriteLine();
+            ReversStack(stack);
             stack.Print();
         }
     }
