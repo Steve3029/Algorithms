@@ -25,14 +25,44 @@ namespace Algorithms
 
                 if (left < right)
                 {
-                    var temp = arr[left];
-                    arr[left] = arr[right];
-                    arr[right] = temp;
+                    Swap(arr, left, right);
                     count++;
                 }
             }
 
             return count;
+        }
+
+        public static void Partion012(int[] arr)
+        {
+            var left = 0;
+            var right = arr.Length - 1;
+            var index = 0;
+            while(index <= right)
+            {
+                if(arr[index] == 0)
+                {
+                    Swap(arr, index, left);
+                    index += 1;
+                    left += 1;
+                }
+                else if(arr[index] == 2)
+                {
+                    Swap(arr, index, right);
+                    right -= 1;
+                }
+                else
+                {
+                    index++;
+                }
+            }
+        }
+
+        private static void Swap(int[] arr, int origin, int target)
+        {
+            var temp = arr[target];
+            arr[target] = arr[origin];
+            arr[origin] = temp;
         }
 
         public static void Main(string[] args)
@@ -44,6 +74,17 @@ namespace Algorithms
             var swapCount = Partition01(arr);
             Console.WriteLine("count: " + swapCount);
             foreach(var value in arr)
+            {
+                Console.Write(value + " ");
+            }
+            Console.WriteLine();
+
+            var arr2 = new int[]
+            {
+                2, 1, 0, 2, 0, 0, 1, 0, 2
+            };
+            Partion012(arr2);
+            foreach (var value in arr2)
             {
                 Console.Write(value + " ");
             }
