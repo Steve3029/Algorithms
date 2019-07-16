@@ -24,14 +24,14 @@ namespace Algorithms
             return dict;
         }
 
-        public static void Main(string[] args)
-        {
-            var testStr = "I am the best developer in the world";
-            var dict = CountNumbersOfCharactar(testStr);
-            foreach (KeyValuePair<char, int> entry in dict)
-            {
-                Console.WriteLine($"{entry.Key}: {entry.Value}");
-            }
-        }
+        //public static void Main(string[] args)
+        //{
+        //    var testStr = "I am the best developer in the world";
+        //    var dict = CountNumbersOfCharactar(testStr);
+        //    foreach (KeyValuePair<char, int> entry in dict)
+        //    {
+        //        Console.WriteLine($"{entry.Key}: {entry.Value}");
+        //    }
+        //}
     }
 }
