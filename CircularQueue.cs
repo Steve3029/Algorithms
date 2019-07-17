@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Algorithms
 {
@@ -25,7 +23,7 @@ namespace Algorithms
             if (count >= capacity) throw new OutOfMemoryException("out of queue capacity");
 
             back++;
-            data[back%capacity] = value;
+            data[back % capacity] = value;
             count++;
         }
 
@@ -50,20 +48,6 @@ namespace Algorithms
         public int Size()
         {
             return count;
-        }
-
-        public static void Main(string[] args)
-        {
-            var queue = new CircularQueue();
-            queue.Add(2);
-            queue.Add(4);
-            queue.Add(6);
-            queue.Add(8);
-            queue.Add(10);
-            for (var i = 0; i < 5; i++)
-            {
-                Console.Write(queue.Remove() + " ");
-            }
         }
     }
 }
