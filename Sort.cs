@@ -65,29 +65,29 @@ namespace Algorithms
             arr[origin] = temp;
         }
 
-        public static void Main(string[] args)
-        {
-            var arr = new int[]
-            {
-                0, 1, 1, 0, 0, 1, 0, 1, 0
-            };
-            var swapCount = Partition01(arr);
-            Console.WriteLine("count: " + swapCount);
-            foreach(var value in arr)
-            {
-                Console.Write(value + " ");
-            }
-            Console.WriteLine();
+        //public static void Main(string[] args)
+        //{
+        //    var arr = new int[]
+        //    {
+        //        0, 1, 1, 0, 0, 1, 0, 1, 0
+        //    };
+        //    var swapCount = Partition01(arr);
+        //    Console.WriteLine("count: " + swapCount);
+        //    foreach(var value in arr)
+        //    {
+        //        Console.Write(value + " ");
+        //    }
+        //    Console.WriteLine();
 
-            var arr2 = new int[]
-            {
-                2, 1, 0, 2, 0, 0, 1, 0, 2
-            };
-            Partion012(arr2);
-            foreach (var value in arr2)
-            {
-                Console.Write(value + " ");
-            }
-        }
+        //    var arr2 = new int[]
+        //    {
+        //        2, 1, 0, 2, 0, 0, 1, 0, 2
+        //    };
+        //    Partion012(arr2);
+        //    foreach (var value in arr2)
+        //    {
+        //        Console.Write(value + " ");
+        //    }
+        //}
     }
 }
