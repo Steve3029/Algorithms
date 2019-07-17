@@ -33,7 +33,7 @@ namespace Algorithms
 
             var value = data[front % capacity];
             front++;
-            count++;
+            count--;
             return value;
         }
 
