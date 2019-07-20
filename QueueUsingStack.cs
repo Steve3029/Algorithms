@@ -50,18 +50,18 @@ namespace Algorithms
             return stack2.Pop();
         }
 
-        public static void Main(string[] args)
-        {
-            var queue = new LinkedListQueue();
-            queue.Add(2);
-            queue.Add(4);
-            queue.Add(6);
-            queue.Add(8);
-            queue.Add(10);
-            for (var i = 0; i < 5; i++)
-            {
-                Console.Write(queue.Remove() + " ");
-            }
-        }
+        //public static void Main(string[] args)
+        //{
+        //    var queue = new LinkedListQueue();
+        //    queue.Add(2);
+        //    queue.Add(4);
+        //    queue.Add(6);
+        //    queue.Add(8);
+        //    queue.Add(10);
+        //    for (var i = 0; i < 5; i++)
+        //    {
+        //        Console.Write(queue.Remove() + " ");
+        //    }
+        //}
     }
 }
